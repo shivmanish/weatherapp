@@ -22,6 +22,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
     on<GetHourlyWeatherForLatLong>(getHourlyWaetherForLatLong);
     on<GetWeeklyWeatherForLatLong>(getWeeklyWaetherForLatLong);
     on<GetWeatherByCity>(getWeatherByCityName);
+    on<GetLoactionPermission>(getLocationPermission);
   }
 
   Future<void> getWaetherForLatLong(
@@ -161,6 +162,34 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
       },
       (data) async {
         emit(CurrentWeatherLoaded(weather: data, type: WeatherType.current));
+      },
+    );
+  }
+
+  Future<void> getLocationPermission(
+    GetLoactionPermission event,
+    Emitter<WeatherState> emit,
+  ) async {
+    emit(Loading(type: WeatherType.locationPermission));
+
+    final latLongEither = await getLatLong.getLatLong();
+
+    latLongEither.fold(
+      (failure) {
+        emit(
+          const Error(
+            message: locationFailureMessage,
+            type: WeatherType.locationPermission,
+          ),
+        );
+      },
+      (latLong) {
+        emit(
+          LocationPerissionLoaded(
+            latLong: latLong,
+            type: WeatherType.locationPermission,
+          ),
+        );
       },
     );
   }

@@ -1,6 +1,6 @@
 part of weather_forecasting;
 
-enum WeatherType { initial, current, forecast, weekly }
+enum WeatherType { initial, current, forecast, weekly, locationPermission }
 
 abstract class WeatherState extends Equatable {
   final WeatherType type;
@@ -56,4 +56,13 @@ class WeeklyWeatherLoaded extends WeatherState {
 
   @override
   List<Object> get props => [weeklyWeatherData];
+}
+
+class LocationPerissionLoaded extends WeatherState {
+  final LatLong latLong;
+
+  const LocationPerissionLoaded({required this.latLong, required super.type});
+
+  @override
+  List<Object> get props => [latLong];
 }

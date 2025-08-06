@@ -32,3 +32,10 @@ class GetWeatherByCity extends WeatherEvent {
   @override
   List<Object?> get props => [cityName];
 }
+
+class GetLoactionPermission extends WeatherEvent {
+  GetLoactionPermission() : super([]);
+
+  @override
+  List<Object?> get props => [];
+}
