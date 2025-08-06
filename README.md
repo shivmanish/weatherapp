@@ -61,6 +61,12 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
 
 ## Screenshots
 <!-- Add screenshots of Home Page, Forecast Overview, Map Page, Error States -->
+
+## 🏠 Permission Check Screen
+<img src="screen_shots/permission_check.png" alt="loaction Permission  Check" width="150" width="200"/>
+
+## 🏠 Home Screen
+<img src="screen_shots/home_oading.png" alt="home loading screen" width="150" width="200"/><img src="screen_shots/home_1.png" alt="Home Screen 1" width="150" width="200"/><img src="screen_shots/home_2.png" alt="Home Screen 1" width="150" width="200"/>
 <!-- Example: -->
 <!-- ![Home Page](screenshots/home_page.png) -->
 <!-- ![Forecast](screenshots/forecast.png) -->
