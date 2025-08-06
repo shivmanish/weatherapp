@@ -79,10 +79,10 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
 <img src="screen_shots/search_1.png" alt="map screen with layer" width="150" width="200"/>       <img src="screen_shots/suggestion_tap_search.png" alt="map screen" width="150" width="200"/>        <img src="screen_shots/manual_type_search.png" alt="Home Screen 1" width="150" width="200"/>
 
 
-## Demo Video
-<!-- Add a link or embed a video showing the app in action -->
-<!-- Example: -->
-<!-- [Demo Video](https://youtu.be/your_video_link) -->
+## 🎥 App Demo (Google Drive)
+
+▶️ [Watch Demo Video on Google Drive](https://drive.google.com/file/d/1igLqyYrAnqh5qP2SiERs7AjklHubjt2c/view?usp=sharing)
+
 
 ## Setup Instructions
 1. **Clone the repository:**
