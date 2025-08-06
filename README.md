@@ -85,7 +85,7 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
 ## Setup Instructions
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/weatherapp.git
+   git clone https://github.com/shivmanish/weatherapp.git
    cd weatherapp
    ```
 2. **Install dependencies:**
