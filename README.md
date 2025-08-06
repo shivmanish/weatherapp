@@ -1,6 +1,6 @@
 # weather_forecasting
 
-A new Flutter project.
+A Weather Forecate app using Goole map kay and open weather api
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
 ## Features & Navigation
 - **Home Page**
   - Shows the current temperature, weather condition, and a relevant weather icon (e.g., sunny, rainy, etc.).
-  - Displays a visually appealing 5-day forecast with easy-to-read UI elements.
+  - Displays a visually appealing 7-day forecast with easy-to-read UI elements.
   - Uses GPS to automatically detect your location.
   - To go to the Map Page, tap the map icon/button in the app bar or navigation drawer.
   - To search for a city, tap the search icon in the app bar.
@@ -45,12 +45,10 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
 - **Testing**
   - Includes unit and widget tests for Bloc logic, utility functions, and key widgets (see `test/` folder).
 
-- **Extra Mile**
-  - [Add any extra features here, e.g., theme switching, weather animations, etc.]
 
 ## Assignment Satisfaction
 - All required features are implemented:
-  - Real-time weather and 5-day forecast
+  - Real-time weather and 7-day forecast
   - Location management (GPS and manual search)
   - Map with weather overlays and interactive markers
   - Seamless navigation between Home and Map pages
@@ -81,7 +79,7 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
 
 ## 🎥 App Demo (Google Drive)
 
-▶️ [Watch Demo Video on Google Drive](https://drive.google.com/file/d/1igLqyYrAnqh5qP2SiERs7AjklHubjt2c/view?usp=sharing)
+▶️ [Watch Demo Video](https://drive.google.com/file/d/1igLqyYrAnqh5qP2SiERs7AjklHubjt2c/view?usp=sharing)
 
 
 ## Setup Instructions
@@ -95,7 +93,7 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
    flutter pub get
    ```
 3. **Configure API Key:**
-   - Do NOT commit API keys to source code.
+   - Pass you map api key in manifest
    - Pass your API key using `--dart-define`:
      ```bash
      flutter run --dart-define=WEATHER_API_KEY=your_api_key
@@ -103,7 +101,7 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
    - Or use VS Code launch configurations (see `.vscode/launch.json`).
 4. **Run the app:**
    ```bash
-   flutter run
+   flutter run --dart-define=WEATHER_API_KEY=your_api_key
    ```
 5. **Build APK (for mobile):**
    ```bash
@@ -123,24 +121,12 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
 - **Error Handling:** All API and location errors are handled gracefully with user feedback.
 - **API Key Management:** API keys are injected via environment variables (`dart-define`).
 
-## Trade-offs
-- Bloc chosen for its robustness and testability. Riverpod/Provider are alternatives but Bloc is preferred for larger apps.
-- Google Maps integration may require additional setup (API key, permissions).
-- Charts/graphs use a simple package for quick visualization; can be replaced with more advanced solutions if needed.
 
 ## How to Run
 - See Setup Instructions above.
-- For web: deploy using `flutter build web` and host the `build/web` folder.
 - For mobile: install APK on device.
 
 ## Tests
 - Run all tests with `flutter test`.
 - Critical logic and widgets are covered.
 
-## Comments for Media
-<!-- Add screenshots below each major feature section in README -->
-<!-- Add video link in Demo Video section above -->
-
-## License
-[MIT License](LICENSE)
-# weatherapp
