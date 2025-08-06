@@ -62,16 +62,22 @@ This Flutter application provides real-time weather data and a 5-day forecast ba
 ## Screenshots
 <!-- Add screenshots of Home Page, Forecast Overview, Map Page, Error States -->
 
-## 🏠 Permission Check Screen
+## 🔐 Permission Check Screen
 <img src="screen_shots/permission_check.png" alt="loaction Permission  Check" width="150" width="200"/>
 
 ## 🏠 Home Screen
-<img src="screen_shots/home_oading.png" alt="home loading screen" width="150" width="200"/>   <img src="screen_shots/home_1.png" alt="Home Screen 1" width="150" width="200"/>    <img src="screen_shots/home_2.png" alt="Home Screen 1" width="150" width="200"/>
-<!-- Example: -->
-<!-- ![Home Page](screenshots/home_page.png) -->
-<!-- ![Forecast](screenshots/forecast.png) -->
-<!-- ![Map Page](screenshots/map_page.png) -->
-<!-- ![Error State](screenshots/error_state.png) -->
+<img src="screen_shots/home_oading.png" alt="home loading screen" width="150" width="200"/>       <img src="screen_shots/home_1.png" alt="Home Screen 1" width="150" width="200"/>        <img src="screen_shots/home_2.png" alt="Home Screen 1" width="150" width="200"/>
+
+
+## 🗺️ Map Screen
+
+<img src="screen_shots/map_1.png" alt="map screen with layer" width="150" width="200"/>       <img src="screen_shots/map_2.png" alt="map screen" width="150" width="200"/>        <img src="screen_shots/marker_window.png" alt="Home Screen 1" width="150" width="200"/>
+
+
+## 🔍 Search Screen
+
+<img src="screen_shots/search_1.png" alt="map screen with layer" width="150" width="200"/>       <img src="screen_shots/suggestion_tap_search.png" alt="map screen" width="150" width="200"/>        <img src="screen_shots/manual_type_search.png" alt="Home Screen 1" width="150" width="200"/>
+
 
 ## Demo Video
 <!-- Add a link or embed a video showing the app in action -->
